@@ -16,13 +16,7 @@ and streams images so the browser only ever talks to your own domain.
 |---|---|---|
 | <img src="docs/screenshots/home-mobile.png" width="240" alt="Explore (mobile)"> | <img src="docs/screenshots/details-mobile.png" width="240" alt="Details (mobile)"> | <img src="docs/screenshots/reader-mobile.png" width="240" alt="Reader (mobile)"> |
 
-> To refresh these with live MangaDex data (real covers and pages), run once:
->
-> ```bash
-> npm run install:all
-> npx playwright install chromium
-> npm run screenshots      # starts the real server, calls the live API, overwrites docs/screenshots/*
-> ```
+
 
 ## Features
 
