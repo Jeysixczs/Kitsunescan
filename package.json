@@ -6,14 +6,16 @@
   "engines": {
     "node": ">=18.0.0"
   },
-   "scripts": {
+  "scripts": {
     "install:all": "npm install && npm install --prefix server && npm install --prefix client",
     "dev": "concurrently -k -n SERVER,CLIENT -c green,cyan \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
     "build": "npm run build --prefix client",
-    "start": "npm run build && npm run start --prefix server"
+    "start": "npm run build && npm run start --prefix server",
+    "screenshots": "node scripts/screenshots.mjs"
   },
   "devDependencies": {
-    "concurrently": "^9.1.0"
+    "concurrently": "^9.1.0",
+    "playwright": "^1.48.0"
   },
   "dependencies": {
     "express": "^4.21.2",
